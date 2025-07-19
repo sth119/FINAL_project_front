@@ -1,0 +1,60 @@
+.body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;  
+    color: #222;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+
+.main{
+    width: calc(88vw - 150px);
+    margin-left: 8vw;
+    height: 85vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+/* //////////////////////////////////////////// */
+.leftbox{
+    width: 18vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    /* height: 100vh; */
+
+    /* align-content: center;
+    justify-items: center; */
+}
+
+/* //////////////////////////////////////////// */
+
+.centerbox{
+    width: 35vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    /* height: 100vh; */
+
+    /* align-content: center;
+    justify-items: center; */
+}
+
+/* //////////////////////////////////////////// */
+
+.rightbox{
+    width: 24vw;
+    /* height: 100vh; */
+
+    /* align-content: center;
+    justify-items: center; */
+}

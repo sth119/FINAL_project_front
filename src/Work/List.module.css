@@ -1,0 +1,289 @@
+
+.body {
+    /* margin: 4vh auto;
+    width: 70%;
+    height: 80%;
+    padding: 0;
+    text-align: left;
+    padding: 3vh 3vw 3vh calc(3vw + 150px);
+    overflow-x: hidden;
+    color: #222; */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;  
+    color: #222;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: calc(90vw - 150px);
+    height: 92vh;
+    margin-left: 8vw;
+}
+
+
+
+.pageTitle {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+
+.pageMiddle {
+    margin: 4vh 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.middleLeft {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.4rem;
+}
+
+.nameCircle{
+    border: solid 1px #6C47FF;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5vh 1vh;
+}
+
+.empPlusButton{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    border: 0;
+}
+
+.empPlusButton:hover{
+    background-color: #E5E1F5;
+}
+
+
+
+.middleRight {
+    text-align: right;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1vw;
+}
+
+.toggleWrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+
+.toggle_container{
+    width: 2vw; 
+    height: 2vh; 
+    background-color: #E5E1F5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #6C47FF;
+}
+
+.toggle_container:hover{
+    .toggle_button{
+        background-color: #4A1DFF;
+    }
+}
+
+.toggle_button{
+    width: 0.8vw;
+    height: 80%;
+    background-color: #6C47FF;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.3s ease;
+    margin: 0 2px;
+}
+
+.managed {
+    left: 0;
+}
+  
+.requested {
+    left: calc(100% - 1vw);
+}
+
+.addButton{
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 0.5vw 1vw;
+    background-color: #6C47FF;
+    color: white;
+    border: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.addButton:hover{
+    background-color: #4A1DFF;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+
+.pageBottom {
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.pageBottom_Box{
+    width: 21vw;
+    transition: all 0.3s ease;
+}
+
+.hr{
+    background-color: #616264;
+    height: 2px;
+    transition: all 0.3s ease;
+}
+
+.pageBottom_Box:hover{
+    color: #6C47FF;
+
+    .bottomNumber{
+        background-color: #6C47FF;
+    }
+
+    .hr{
+        background-color: #6C47FF;
+    }
+}
+
+.bottomNumber{
+    height: 5vh;
+    padding: 0 1vw;
+    border-radius: 20px 20px;
+    background-color: #616264;
+    color: white;
+    border: 0;
+    transition: all 0.3s ease;
+}
+
+
+.bottom_background{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E1F5;
+    overflow-y: auto;
+    border-radius: 10px;
+    height: 55vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 2vh;
+    gap: 1vh;
+}
+
+.WorkBox{
+    height: 20vh;
+    padding: 1vh;
+    margin: 1vh;
+}
+
+.selected {
+    border: 2px solid #6C47FF;
+    color: white;
+    border-radius: 8px;
+    background-color: #6C47FF;
+}
+
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+}
+  
+.empModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 1.5%;
+    border-radius: 8px;
+    min-width: 320px;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    z-index: 1001;
+}
+
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    align-items: flex-start;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.cancelButton{
+    width: 20%;
+    height: 60%;
+    border-radius: 5px;
+    border: none;
+    background-color: #E5E1F5;
+    color: #616264;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cancelButton:hover{
+    background-color: #D1CFE2;
+}
+
+.empItem {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+
+.bottom_background.dragover {
+    background: #f0f0f0;
+    border: 2px dashed #6C47FF;
+}
+  
+  

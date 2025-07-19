@@ -1,0 +1,29 @@
+
+.pageBar { 
+    margin-top: 20px;
+    height: 3vh;
+}
+.pageBox {
+    margin: 0 auto;
+    /* width: 50%; */
+    line-height: 3vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.pageBox .pageNum {
+    padding:0 5px;
+    margin:0 5px;
+    cursor: pointer;
+}
+.pageBox .pageNum i{
+    font-size: 0.8rem;
+}
+.activePage{
+    padding:0 5px;
+    margin:0 5px;
+    color:red;
+    font-weight: bold;
+    font-size: 1.3rem;
+}

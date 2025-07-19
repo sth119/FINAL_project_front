@@ -1,0 +1,68 @@
+.container {
+    position: absolute;
+
+    top: 142px;
+    right: 650px;
+
+    width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 12px 12px;
+
+    z-index: 10;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.chatname {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #b574f5;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.emplist {
+    width: 100%;
+}
+
+.emp {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.emp:hover {
+    background-color: #f2f2f2;
+}
+
+.empimg {
+    width: 40px;
+    height: 40px;
+    /* background-color: #eee; */
+    border-radius: 50%;
+    margin-right: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empimg img {
+    width: 40px;
+}
+
+.empname {
+    font-size: 15px;
+    color: #333;
+}

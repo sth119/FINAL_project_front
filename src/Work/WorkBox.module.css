@@ -1,0 +1,63 @@
+.workBox{
+    box-sizing: border-box;
+    padding: 2vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    color: #222;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vh;
+
+    font-size: 1.1rem;
+}
+
+.workBox:hover {
+    border: 1px solid #6C47FF;
+}
+
+.workBoxTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.type{
+    height: 3vh;
+    padding: 0 1vw;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #6C47FF;
+    color: white;
+    border: 0;
+
+    font-size: 1rem;
+}
+
+.arrow{
+    margin-left: auto;
+}
+
+.workBox {
+    transition: transform 0.2s, opacity 0.2s;
+}
+  
+.workBox.dragging {
+    opacity: 0.5;
+    transform: scale(0.95);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.workBox[draggable="false"] {
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.manager {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+

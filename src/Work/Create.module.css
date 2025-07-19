@@ -1,0 +1,477 @@
+.container{
+    margin: 10vh auto;
+    align-items: flex-start;
+    width: 70%;
+    height: 80vh;
+    text-align: left;
+    display: flex;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    padding: 2vh 2vw 2vh calc(2vw + 150px);
+    overflow-x: hidden;
+    color: #222;
+}
+
+.innerContainer{
+    width: 100%;
+    height: 100%;
+    min-height: 65vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1vh;
+    box-sizing: border-box;
+}
+
+.leftBox{
+    width: 60%;
+    height: 100%;
+    padding: 2vh 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    box-sizing: border-box;
+
+    background-color: #E5E1F5;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.pageDetail{
+    position: absolute;
+    right: 0;
+    padding-right: 2vh;
+}
+
+.leftContent{
+    width: 100%;
+    height: auto;
+    padding: 1vh 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+
+    box-sizing: border-box;
+}
+
+.contentLeft{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.contentRight{
+    width: 80%;
+    height: 5vh;
+    gap: 2vh;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.nameInputBox{
+    width: 50%;
+    height: 4vh;
+    padding: 1% 2%;
+    border: solid 1px #6C47FF;
+    border-radius: 5px;
+    font-size: 1.3rem;
+
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.nameInputBox:focus {
+    outline: none;
+}
+
+.status1, .status2, .status3, .status4{
+    width: 20%;
+    height: 80%;
+    padding: 0 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: beige;
+}
+
+.status1 { border: 2px solid #5bc0de; background-color: #5bc0de;}
+.status2 { border: 2px solid #337ab7; background-color: #337ab7;}
+.status3 { border: 2px solid #f0ad4e; background-color: #f0ad4e;}
+.status4 { border: 2px solid #5cb85c; background-color: #5cb85c;}
+
+.status1.on{
+    border: solid 2px #1f6474;
+    border-radius: 30px;
+}
+
+.status1.on:hover{
+    background-color: #1f6474;
+}
+
+.status2.on{
+    border: solid 2px #10273b;
+    border-radius: 30px;
+}
+
+.status2.on:hover{
+    background-color: #10273b;
+}
+
+.status3.on{
+    border: solid 2px #865511;
+    border-radius: 30px;
+}
+
+.status3.on:hover{
+    background-color: #865511;
+}
+
+.status4.on{
+    border: solid 2px #1f491f;
+    border-radius: 30px;
+}
+
+.status4.on:hover{
+    background-color: #1f491f;
+}
+
+.status1:hover { border: 2px solid #1f6474; background-color: #31a6c0; color: white;}
+.status2:hover { border: 2px solid #10273b; background-color: #286090; color: white;}
+.status3:hover { border: 2px solid #865511; background-color: #ec971f; color: white;}
+.status4:hover { border: 2px solid #1f491f; background-color: #449d44; color: white;}
+
+.type{
+    width: 20%;
+    height: 80%;
+    border-radius: 8px;
+    background-color: white;
+    color: #222;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.type.on{
+    border: 2px solid #6C47FF;
+}
+
+.type:hover{
+    background-color: #6C47FF;
+    border: 2px solid #6C47FF;
+    color: white;
+}
+
+.reactDatepicker{
+    width: 90%;
+    height: 3vh;
+    padding-left: 0.5vw;
+    background-color: white;
+    border: solid 1px #6C47FF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reactDatepicker:focus {
+    outline: none;
+}
+
+.detailInputBox{
+    width: 100%;
+    height: 18vh;
+    padding: 1% 2%;
+    border: solid 1px #6C47FF;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
+    box-sizing: border-box;
+    vertical-align: top;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    resize: none;
+}
+
+.detailInputBox:focus {
+    outline: none;
+}
+
+.rightBox{
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+
+.dateBox{
+    width: 100%;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    box-sizing: border-box;
+
+    background-color: #E5E1F5;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.memoBox{
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 0;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
+    box-sizing: border-box;
+    
+    background-color: #E5E1F5;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.memoInputBox{
+    width: 100%;
+    padding: 1% 2%;
+    flex: 1 1 auto;
+    min-height: 0;
+    border: solid 1px #6C47FF;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+
+    box-sizing: border-box;
+    vertical-align: top;
+    resize: none;
+}
+
+.memoInputBox:focus {
+    outline: none;
+}
+
+.buttonBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    gap: 2vh;
+}
+
+.buttonBoxLeft{
+    width: 47%;
+    height: 60%;
+    padding: 0.5vw;
+    border-radius: 5px;
+    border: none;
+    background-color: #6C47FF;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.buttonBoxLeft:hover{
+    background-color: #4A1DFF;
+}
+
+.buttonBoxRight{
+    width: 47%;
+    height: 60%;
+    padding: 0.5vw;
+    border-radius: 5px;
+    border: 1px solid #6C47FF;
+    background-color: white;
+    color: #222;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.buttonBoxRight:hover{
+    background-color: #D1CFE2;
+}
+
+
+.createCancelButton {
+    color: #222;
+}
+
+.backCancelButton{
+    color: #222;
+}
+
+.cancelButton {
+    position: absolute;
+    right: 20px;
+    top: 6.5vh;
+    cursor: pointer;
+}
+
+
+.selectedEmployeeWrap {
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 60px;
+}
+
+.selectedEmployeeWrap.hasEmployee {
+    border: solid 1px #6C47FF;
+}
+
+.selectedEmployeeScroller{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    overflow-y: auto;
+    max-height: 60px;
+    padding: 1%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.selectedEmployee {
+    display: inline-block;
+    margin: 1%;
+    padding: 1% 2%;
+    background: #f0f0f0;
+    border-radius: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.empModal {
+    background: white;
+    padding: 1.5%;
+    width: 400px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.modalContent{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.confirmButton{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6C47FF;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.confirmButton:hover{
+    background-color: #4A1DFF;
+}
+
+.modalCancelButton{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #E5E1F5;
+    color: #222;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.modalCancelButton:hover{
+    background-color: #D1CFE2;
+}
+
+
+.empItem {
+    padding: 1%;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+
+.empItem:hover {
+    background: #f8f8f8;   
+}
+
+.empItem input {
+    margin-right: 2%;
+}
+
+.selected {
+    background-color: #e6f3ff;
+}
+
+.modalActions {
+    margin-top: 2vh;
+    height: 5vh;
+    display: flex;
+    gap: 2%;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.checkbox{
+    accent-color: #6C47FF;
+}
